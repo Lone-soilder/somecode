@@ -15,3 +15,8 @@ git commit -m "adding modified new doc to staging area"
     then see git status [deleted file in green color which means staging area also updated at a time]
     git restore -S mynote2.md  [to restore the deleted file from staging area to work area]
     git restore mynote2.md     [to restore the delete in working area]
+
+---- rename a file ----
+1. git mv filename renamefile
+
+    rename the file with this command 'git mv' and also update the staging area.
