@@ -3,3 +3,10 @@ hi biswajit ,
 what are you doing ?
 
 now we have committed this new file to the staging area with the command "git commit -m 'adding new document'".
+
+git commit -m "adding modified new doc to staging area"
+
+----- delete a file ----
+1.  manually delete the file from folder
+    see git status - deleted mynote2.md [means you have to add into staging.]
+    so add and commit again
