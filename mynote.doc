@@ -10,3 +10,5 @@ git commit -m "adding modified new doc to staging area"
 1.  manually delete the file from folder
     then see git status - deleted mynote2.md [means you have to add into staging.]
     so add and commit again
+
+2. 
