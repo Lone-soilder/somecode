@@ -11,4 +11,7 @@ git commit -m "adding modified new doc to staging area"
     then see git status - deleted mynote2.md [means you have to add into staging.]
     so add and commit again
 
-2. 
+2.  git rm mynote2.md 
+    then see git status [deleted file in green color which means staging area also updated at a time]
+    git restore -S mynote2.md  [to restore the deleted file from staging area to work area]
+    git restore mynote2.md     [to restore the delete in working area]
