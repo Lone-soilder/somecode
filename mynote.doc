@@ -1,3 +1,5 @@
 hi biswajit ,
 
 what are you doing ?
+
+now we have committed this new file to the staging area with the command "git commit -m 'adding new document'".
