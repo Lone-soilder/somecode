@@ -20,3 +20,7 @@ git commit -m "adding modified new doc to staging area"
 1. git mv filename renamefile
 
     rename the file with this command 'git mv' and also update the staging area.
+
+------ branch ------
+1. check your list of branches [ git branch ]
+2. Command to make new branch - [git switch -c NAME ] / [git checkout -b NAME]
