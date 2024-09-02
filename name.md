@@ -1,1 +1,1 @@
-this file is created for rename function
+this file is created for rename function.
