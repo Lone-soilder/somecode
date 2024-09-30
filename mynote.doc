@@ -6,6 +6,173 @@ now we have committed this new file to the staging area with the command "git co
 
 git commit -m "adding modified new doc to staging area"
 
+New repository = new folder 
+commit = save 
+fork = complete copy
+Github issues - complaint
+
+what is branch?
+---------------
+when a made a base code and after that you are making two possible feature but want work at a time.
+
+From main code 'A' (master) you will make two branches called 'AB' & 'AC'.
+
+You can work at a time AB & AC feature.
+
+What is push & pull request?
+----------------------------
+When you give the code to remote or any one , it is called push.
+
+when you retrieve or download the code from remote or anyother , it is called pull. Even if you want to merge the code from branch 'AB' to main/master branch 'A' , It is called pull request.
+
+Recieving / merging - pull
+Giving / uploading - push 
+
+Git Initialization 
+------------------
+git config --global user.name "harsh"
+git config --global user.email "harshu324@gmail.com"
+
+Stages
+-------
+working area - Normal Folder & files not created by Git
+tracked area - Folders and files Git knows about it
+staging area - Selected Folder and Files Git will upload
+Git Directory - Folder and Files uploaded to git
+
+
+Git process
+-----------
+1) git init - now this folder has git access , .git file added
+
+2) git status - which files is not yet uploaded - Red - (untracked files in working area)   		/ Green - Files are in tracked area 
+
+3) git add . = add all file to tracked area , All files under this folder (where you are 		running git) is selected to be knownn by git 
+
+4) git commit -m "first save" = files in tracked area are in staging area , from where git 				will upload.
+
+------ time to upload in Git hub----
+
+5) git remote add origin URL - this set up is where to upload files in mentioned URL
+
+6) git push -u origin master - command to push remote repository (here master is the main 				branch.)
+
+--------------------
+Commands to push changes 
+
+1. git init
+2. git add .
+3. git status
+4. git commit -m "second changes"
+5. git pull origin master (to make sure you are up to date)
+6. git push origin master - pushing changes to the remote
+
+---------------------
+How to clone ?
+
+git clone [URL of any Repo]
+
+It will download the repo to your local machine from internet . It will create a new folder with repo name in your machine.
+
+----------------------
+Command line for branches 
+
+git branch = shows all branch
+
+git pull origin master = to refresh with remote repo
+
+git branch Mybranch = made a new branch called Mybranch
+
+git checkout Mybranch = switched to Mybranch
+
+----pushing changes to Mybranch-----
+
+1. git init
+2. git add .
+3. git status
+4. git commit -m "pushing changes to mybranch"
+5. git pull origin Mybranch (to make sure you are up to date)
+6. git push origin Mybranch - pushing changes to the remote
+
+-------------------Merging Mybranch to master branch--------
+
+1. git checkout master = moves to master branch
+
+2. git pull origin master = make sure everything is uptodate on your master before you merge
+
+3. git branch --merged  = merging the branch
+
+4. git merge Mybranch  = merging the branch
+
+5. git push origin master = push the changes to master
+
+-----------------------------------------------------------------------------------
+
+				LINKED IN LEARNING 
+
+-----------------------------------------------------------------------------------
+git add FILENAME
+git add .
+git add --all
+git add -A
+
+git commit -m "first commit"
+
+HEAD -> main (means the head is currently in main branch [sometime we call master branch to main branch]. Git uses branches to organize projects  )
+
+* Git has 3 place to move where you can move file.
+	
+	. working [the place you develop your code and save]
+	. staging [using add. (dating before marriage)]
+	. commit  [final environment to upload in remote]
+
+
+* file states - tracked [file existed in previous snapshot] , untracked [a new file added since the last commit]
+
+* tracked file - unmodified	[not changed since last commit]
+		 modified	[changed in last commit]
+ 		 staging	[moved to staging environment]
+
+* git status - command to know the file status
+
+* staging envo to working envo. = restore command  [GET OUT OF THE STAGING AREA]
+	
+	1. restore --staged README.MD 	[ --staged means stage flag ]
+	
+	2. git restore . [all changes comeback/reflect in original file]
+
+
+* Ignore files?
+	
+	create a file in your folder called '.gitignore' and write the things you want git to excuse.
+
+* git mv index.html home.html [rename a file]
+
+-------------how to add remote repo -----------
+
+1. the remote url is assigned as an origin. You just need to call it as origin each time you push or pull.
+	
+	[origin mean remote UR].
+
+2. command to setup remote url -
+
+	 git remote add NAME URL / git remote add origin URL 
+
+3. other commands regarding remotes - 
+	git remote remove NAME -    to remove the remote from list
+	git rename OLDNAME NEWNAME - for renaming
+	git remote -v   - verbose / show the list of remote 
+
+--------------- HOW TO PUSH FROM LOCAL TO REMOTE -------
+
+1. First time you push , you have to add '-u' option which is called " --set-upstream-to " then you put name of the remote repo(origin) then to the branch you want to push.
+
+	git push REMOTE BRANCH - e.g git push origin main
+	
+	git push -u origin main [for the first time use -u]
+
+	git push -all [to push all local branches to remote branches]
+
 ----- delete a file ----
 1.  manually delete the file from folder
     then see git status - deleted mynote2.md [means you have to add into staging.]
