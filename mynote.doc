@@ -199,3 +199,72 @@ HEAD -> main (means the head is currently in main branch [sometime we call maste
 
 5. how to delete? [git branch -d NAME]
 
+------------------------------------
+I want to create a new branch in remote and push from my new branch of local 
+------------------------------------
+
+To create a new branch on the remote and push your local branch to it, follow these steps:
+
+1. **Create a new branch in your local repository:**
+   ```bash
+   git checkout -b <new-branch-name>
+   ```
+
+2. **Push the new local branch to the remote as a new remote branch:**
+   ```bash
+   git push origin <new-branch-name>
+   ```
+
+This will create the new branch on the remote and push your local branch to it.
+
+3. **Set the upstream (tracking) branch** so that your local branch is linked to the remote one for future pushes and pulls:
+   ```bash
+   git push --set-upstream origin <new-branch-name>
+   ```
+
+Now your local branch is connected to the new remote branch, and you can use `git push` and `git pull` without specifying the branch name again.
+
+------------------------------------
+how to merge to main from new branch in remote
+------------------------------------
+To merge your new branch into the `main` branch on the remote, follow these steps:
+
+### 1. **Switch to the `main` branch locally:**
+   First, make sure you're on the `main` branch:
+   ```bash
+   git checkout main
+   ```
+
+### 2. **Pull the latest changes from the remote `main` branch:**
+   Ensure your local `main` branch is up to date with the remote:
+   ```bash
+   git pull origin main
+   ```
+
+### 3. **Merge your new branch into the `main` branch locally:**
+   Merge the changes from your new branch into the local `main` branch:
+   ```bash
+   git merge <new-branch-name>
+   ```
+
+### 4. **Push the updated `main` branch to the remote:**
+   After merging, push the changes to the remote `main` branch:
+   ```bash
+   git push origin main
+   ```
+
+This will update the `main` branch on the remote repository with the changes from your new branch.
+
+### (Optional) **Delete the new branch (if no longer needed):**
+   After merging, if you no longer need the new branch, you can delete it:
+
+   - **Locally:**
+     ```bash
+     git branch -d <new-branch-name>
+     ```
+
+   - **Remotely:**
+     ```bash
+     git push origin --delete <new-branch-name>
+     ```
+
