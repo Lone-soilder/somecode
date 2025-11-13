@@ -1,4 +1,4 @@
 Hi , my name is Biswajit and this is my first commit c1.
-updating second line from github. Extending this line to check the merge.
+updating second line from GitHub. I am writing this line to check the merge in branch2. Extending this line to check the merge in branch1.
 Pull requested accepted. main <-- branch1
 merge request - branch1 --> branch2
