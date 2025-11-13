@@ -1,4 +1,3 @@
 R1 - commit one - ed0d710
-
+this is a new line added as part of R6 - commit sixth on main
 a -- b -- c -- e -- f -- d -- e
-this is a new line added as part of R7 - commit seven on branch1
