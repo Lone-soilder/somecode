@@ -4,4 +4,5 @@ Pull requested accepted. main <-- branch1
 merge request - branch1 --> branch2
 
 4 Apr
+branch 2 -> this changes is from branch 1 local to remote
 branch 1 -> this changes is from branch 1 local to remote.s
