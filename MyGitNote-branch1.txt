@@ -7,5 +7,5 @@ merge request - branch1 --> branch2
 branch 1 -> this changes is from branch 1 local to remote
 branch 2 -> this changes is from branch 2 local to remote
 
-This is the changes by branch1.
+This is the changes by branch1 ,and I am changing this line to practice git stash.
 This is a change done in branch2.
