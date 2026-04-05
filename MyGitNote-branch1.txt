@@ -8,4 +8,4 @@ branch 1 -> this changes is from branch 1 local to remote
 branch 2 -> this changes is from branch 2 local to remote
 
 This is the changes by branch1 ,and I am changing this line to practice git stash.
-This is a change done in branch2 , and I am changing this line from local main branch to understand git rebase.
+This is a change done in branch2 ,and I am changing this line on local branch2 to understand the rebase.
